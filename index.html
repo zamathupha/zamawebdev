@@ -5,6 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
@@ -16,13 +17,36 @@
             justify-content: space-between;
         }
 
+        .location {
+            /* float: right; */
+            text-align: right;
+        }
+
+        .additinalLinks {
+            text-align: center;
+        }
+
+        .centre {
+            text-align: center;
+            border: 3px solid green;
+        }
+
         .topnav {
             overflow: hidden;
-            background-color: none;
+            background-color: green;
         }
 
         .topnav a {
             float: right;
+            color: white;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav b {
+            float: left;
             color: black;
             text-align: center;
             padding: 16px 16px;
@@ -32,12 +56,12 @@
 
         .topnav a:hover {
             background-color: none;
-            color: black;
+            color: gold;
         }
 
         .topnav a.active {
             background-color: none;
-            color: black;
+            color: white;
         }
         .fa {
             padding: 20px;
@@ -71,24 +95,18 @@
 </head>
 
 <div class="topnav">
-    <a href="#Contact Us">Contact Us</a>
-    <a href="#About me">About me</a>
-    <a href="#Home">Home</a>
-</div>
-
-<!-- <div style="padding-left:100px" float: left text-align: left padding:16px font-size: 5px>
-    <img src="logo.png" style="width:50px;height:30px;">
-</div> -->
-
-<div style="padding-left:100px" float: left text-align: center padding:16px font-size: 5px>
-    <img src="logo.png" style="width:50px;height:30px;">
+    <a href="#contactUs">Contact Us</a>
+    <a href="#about">About me</a>
+    <a href="#home">Home</a>
+    <b><img src="logo.png" style="width:60px;height:40px;"></b>
 </div>
 
 
 <div>
+    <br><br><br><br><br><br> 
     <video width="1700" controls>
-        <source src="RPReplay_Final1712298030.mov" type="video/mp4">
-        <source src="RPReplay_Final1712298030.mov" type="video/mov">
+        <source src="CANCER Zodiac Sign.mp4" type="video/mp4">
+        <source src="CANCER Zodiac Sign.mp4" type="video/mov">
         Your browser does not support HTML video.
     </video>
 </div>
@@ -106,14 +124,25 @@
         </div>
 </div>
 <div>
-    <h1>Address </h1>
-
+    <hr>
     <address>
-        <a href="google map">Kibler Park</a>.<br>
+       <!--<a href="https://www.bing.com/search?pglt=41&q=kibler+park+google+map&cvid=19de364926e5440abb46b9c3e7490a21&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQg3NTExajBqMagCALACAA&FORM=ANNTA1&PC=DCTS">Kibler Park</a>.<br>-->
         Visit us at:<br>
         Kibler park,2029<br>
         Johannesburg South
     </address>
+
+    <div class="additinalLinks">
+        <a href="https://github.com/zamathupha/zamawebdev">Github</a>
+    </div>
+
+    <div class="location">
+        <div id="location">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3043085460695!2d27.992558075419034!3d-26.31664397700749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9507a632e5eef7%3A0xe5d4c70117eb4a75!2sEast%20On%2082%20Rental%20Apartments%20-%20Central%20Developments!5e0!3m2!1sen!2sza!4v1713099437829!5m2!1sen!2sza" 
+           width="700" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</hr>
 </div>
 
 <body>
@@ -124,6 +153,39 @@
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-linkedin"></a>
     <a href="#" class="fa fa-instagram"></a>
+
+    <br><br><br>
+    <div class="sizingContainer spacedBlock">
+        <div id="about" class="centre">
+            <h1>About Me</h1>
+            <p>I've recently obtained Software Testing Certicate based on the ISBQ, <br></p>
+            <p>I also hold a Diploma in Media Studies and Journalism<br></p>
+            <p>I enjoy coding and testing, I've completed short courses based on API Testing<br></p>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="sizingContainer spacedBlock">
+        <div id="contactUs" class="centre">
+            <h1>Contact US</h1><br>
+            <p><img src="phone.png" style="width:30px;height:30px;"> Contact us on 011 443 1771</p><br>
+            <p><img src="mail.png" style="width:30px;height:30px;"> Email us on emailUs@dummyemail.co.za</p><br>
+            <div class="center">
+            <form action="#">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <label for="lname">Email Address:</label><br>
+                <input type="text" id="email" name="Email" value=""><br><br>
+                <textarea id="w3review" name="w3review" rows="4" cols="50">Add your message here</textarea>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
