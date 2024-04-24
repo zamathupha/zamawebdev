@@ -5,6 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="./style.css">
     <style>
         body {
             margin: 0;
@@ -90,7 +91,35 @@
             background: #88122f;
             color: white;
         }
+    
+        
+       
+        
     </style>
+    <script type="text/javascript">
+
+        function Person(name, surname, bio, contact) {
+            this.name = name;
+            this.surname = surname;
+            this.bio = bio;
+            this.projects = new Array("intro To Html", "Intro to CSS", "Intro to JavaScript");
+            this.contact = contact;
+        }
+
+        Person.prototype.toString = function() {
+            return "My name is " + this.name +"</br>"+
+            "My surname is " + this.surname +"</br>"+
+            "bio is " + this.bio +"</br>"+
+            "The projects I have worked on are " + this.projects[0], +"</br>"+
+            this.projects[1], +"</br>"+
+            this.projects[2], +"</br>"+
+            this.projects[3], +"</br>"+
+            "my contact is " + this.contact;
+        }
+
+        var zama = new Person("Zama", "Thupha", "I'm a cancerian", "zamathupha@gmail.com 082 408 2422");
+
+    </script>
 </head>
 
 <div class="topnav">
@@ -177,7 +206,8 @@
             <p><img src="phone.png" style="width:30px;height:30px;"> Contact us on 082 408 2422 - 060 580 0297</p><br>
             <p><img src="mail.png" style="width:30px;height:30px;"> Email us on zamathupha@gmail.com</p><br>
             <div class="center">
-            <form action="#">
+
+            <form action="https://formspree.io/f/mayradaj" method="post">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" value=""><br>
                 <label for="lname">Last name:</label><br>
@@ -192,6 +222,23 @@
         </div>
     </div>
 
+
+ 
+    <br>
+    <h1>My Profile<br></h1>
+    <div class="centre" >
+    <script type="text/javascript">
+        // document.write(zama.toString()); 
+        document.write("My name is " + zama.name +"</br>");
+        document.write("My Surname is " + zama.surname+"</br>");
+        document.write("I am certified software tester i have basic knowledge API,Postman and I am Determind to break and fix things, " + zama.bio+"</br>");
+        document.write("The projects I have worked on " + zama.projects[0]+"</br>");
+        document.write(  zama.projects[1]+"</br>");
+        document.write(  zama.projects[2]+"</br>");
+        document.write(  zama.projects[3]+"</br>");
+        document.write("My contact details " + zama.contact+"</br>");
+        </script>
+</div>
 
 </body>
 
